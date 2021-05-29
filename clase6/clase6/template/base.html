@@ -1,0 +1,21 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %} Pagina padre {% endblock%}
+        </title>
+    </head>
+    <body>
+     {% include "cabeza.html" %}
+     <hr width="100%" color="red" size="5">
+     <h1 style="text-align: center; color: blue;">Bienvnido a nuestra pagina de Tecnologia</h1>
+     {% block content %} 
+     <h2><span style="font-family: 'Times New Roman', Times, serif;">Pagina Principal</span></h2>  
+     <h2><span style="color: coral;">{{dNombre}} </span></h2>
+     <h2><span style="color: darkgreen;">{{dDireccion}} </span></h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/St4-w-px9t8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     {% endblock%}
+     <hr width="100%" color="red" size="5">
+     <h5 style="text-align: center;">Gracias por visitar esta pagina</h5> 
+    </body>
+</html>
